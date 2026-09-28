@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{lrrrrr}
+\toprule
+Dataset & $K$ / $\lambda$ & V-SKNN NDCG@10 & Full NDCG@10 & $\Delta$ & 95\% CI \\
+\midrule
+talkplay & 100 / 0.85 & 0.04887 & 0.02600 & -0.02287 & [-0.03521, -0.01011] \\
+ml1m & 250 / 0.85 & 0.08565 & 0.01872 & -0.06693 & [-0.07278, -0.06112] \\
+lastfm & 50 / 1.00 & 0.09533 & 0.01749 & -0.07784 & [-0.08800, -0.06774] \\
+amazon\_music & 50 / 1.00 & 0.00932 & 0.05205 & +0.04273 & [+0.03229, +0.05408] \\
+\bottomrule
+\end{tabular}
+\caption{Validation-selected recency-weighted V-SKNN versus Full. Differences are Full minus V-SKNN; exploratory 95\% intervals cluster-resample sessions/users after averaging Full repetitions.}
+\label{tab:ecir-vsknn}
+\end{table*}

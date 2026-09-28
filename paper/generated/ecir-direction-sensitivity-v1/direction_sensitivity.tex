@@ -1,0 +1,16 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{rccc}
+\toprule
+Directions $S$ & Learned+fixed & ACE & $\Delta$\\
+\midrule
+1 & 0.02540 & 0.02599 & +0.00059\\
+2 & 0.02546 & 0.02604 & +0.00058\\
+5 & 0.02548 & 0.02600 & +0.00053\\
+10 & 0.02556 & 0.02603 & +0.00048\\
+20 & 0.02551 & 0.02606 & +0.00054\\
+\bottomrule
+\end{tabular}
+\caption{TalkPlay full-catalog NDCG@10 sensitivity to the number of query directions. Values average five training seeds and ten paired inference seeds. The sweep uses frozen checkpoints and does not select $S$ on the test set.}
+\label{tab:direction-sensitivity}
+\end{table}

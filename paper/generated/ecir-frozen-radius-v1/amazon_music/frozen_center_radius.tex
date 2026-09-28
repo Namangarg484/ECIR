@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+Frozen-center condition & NDCG@10 & Train SD\\
+\midrule
+No expansion & 0.05173 & 0.00031\\
+fixed\_kappa\_10 & 0.05173 & 0.00015\\
+fixed\_kappa\_50 & 0.05201 & 0.00010\\
+fixed\_kappa\_100 & 0.05199 & 0.00018\\
+fixed\_kappa\_500 & 0.05178 & 0.00023\\
+Adaptive, hard clip & 0.05192 & 0.00015\\
+Adaptive, smooth bound & 0.05192 & 0.00014\\
+\bottomrule
+\end{tabular}
+\caption{Frozen-center comparison. Every row uses the identical learned center within training seed; expanded rows also share paired directions. Fixed radius is selected on validation only.}
+\label{tab:frozen-center-radius}
+\end{table}

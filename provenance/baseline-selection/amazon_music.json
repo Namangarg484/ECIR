@@ -1,0 +1,85 @@
+{
+  "methods": {
+    "popularity": {
+      "validation": {
+        "NDCG@10": 0.0018963676304551425,
+        "Recall@10": 0.003276003276003276,
+        "Recall@50": 0.006552006552006552,
+        "MRR@50": 0.0015779709328096424
+      }
+    },
+    "last_item": {
+      "validation": {
+        "NDCG@10": 0.07085758188810452,
+        "Recall@10": 0.10728910728910729,
+        "Recall@50": 0.15151515151515152,
+        "MRR@50": 0.06155857683113898
+      }
+    },
+    "transition_knn": {
+      "validation": {
+        "NDCG@10": 0.005677280711904537,
+        "Recall@10": 0.007371007371007371,
+        "Recall@50": 0.010647010647010647,
+        "MRR@50": 0.005250149604988315
+      }
+    },
+    "content_sasrec": {
+      "params": {
+        "lr": 0.0003,
+        "dropout": 0.1
+      },
+      "validation_ndcg10": 0.016312504901697087,
+      "parameter_count": 1779840,
+      "checkpoints": {
+        "42": "content_sasrec.candidate-2.seed-42.pt",
+        "123": "content_sasrec.selected.seed-123.pt",
+        "456": "content_sasrec.selected.seed-456.pt",
+        "789": "content_sasrec.selected.seed-789.pt",
+        "2026": "content_sasrec.selected.seed-2026.pt"
+      }
+    }
+  },
+  "candidates": [
+    {
+      "params": {
+        "lr": 0.0001,
+        "dropout": 0.1
+      },
+      "seed": 42,
+      "validation_ndcg10": 0.0038434792793821514,
+      "checkpoint": "content_sasrec.candidate-0.seed-42.pt",
+      "parameter_count": 1779840
+    },
+    {
+      "params": {
+        "lr": 0.0001,
+        "dropout": 0.2
+      },
+      "seed": 42,
+      "validation_ndcg10": 0.0007897322579072816,
+      "checkpoint": "content_sasrec.candidate-1.seed-42.pt",
+      "parameter_count": 1779840
+    },
+    {
+      "params": {
+        "lr": 0.0003,
+        "dropout": 0.1
+      },
+      "seed": 42,
+      "validation_ndcg10": 0.016312504901697087,
+      "checkpoint": "content_sasrec.candidate-2.seed-42.pt",
+      "parameter_count": 1779840
+    },
+    {
+      "params": {
+        "lr": 0.0003,
+        "dropout": 0.2
+      },
+      "seed": 42,
+      "validation_ndcg10": 0.0068377026235962365,
+      "checkpoint": "content_sasrec.candidate-3.seed-42.pt",
+      "parameter_count": 1779840
+    }
+  ]
+}

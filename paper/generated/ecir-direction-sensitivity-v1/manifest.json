@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "experiment": "ecir-query-direction-sensitivity-report",
+  "result_manifest_sha256": "65bce1346d28743faaf4c395ba8c7f60eb9dc36c27b292c5b40ba02edbee7a1f",
+  "report_source_sha256": "1b6aac32e1c0f774dd930766dd01e389a7806bc631499b9ef9ed935849ee088e",
+  "bootstrap_replicates": 10000,
+  "files": {
+    "REPORT.md": "70140a519e3cceabfdb3817e9bd89fa71a39e9fdc046dddaa326cbe5ae0ee1c1",
+    "direction_sensitivity.csv": "e088c6e53bb5dae2112772e8e3b8d71fdf790b66c04b87dbf2c7f002e1bcbdb6",
+    "direction_sensitivity.pdf": "457b28b228815b86e4d5598c2a5a30c244a5458107d962d3b17813586e07a229",
+    "direction_sensitivity.png": "77acc49b260b9433113dae89bbb20f16785fdb144fd4c00d180304acac7ce03a",
+    "direction_sensitivity.tex": "5175d655bb0028e7af786e26f5701d960dcf65e86eedbacb7fc39d0050971b4d",
+    "seed_aware_comparison_s5.csv": "2824ec658a81d5f7f77312ab9f648f7d2d2330330e3e9f7495343db862416e8f",
+    "seed_differences_s5.csv": "03d4d3618b36af4b79c1b9084ce6717c3a45e2aac76084f0285f55998fa5ad27"
+  }
+}

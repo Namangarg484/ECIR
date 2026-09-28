@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "experiment": "ecir-radius-v9-report",
+  "dataset": "ml1m",
+  "source_sha256": {
+    "experiments/ecir/frozen_radius.py": "4b11b131f2150891452c9d8766fd22376f5c6a57f6f1d5a9fb9844a840374413",
+    "experiments/revision/run.py": "b389dfe383d938f1cef77286248d41bf20bb6e115ae263e66cafa3ccce4bc1fe",
+    "experiments/revision/protocol.py": "e70c2e17d5955c5c372701dcd7885832fc447b02b0d31d3c4296040923e39c01",
+    "experiments/ecir/query_direction_sensitivity.py": "1b6aac32e1c0f774dd930766dd01e389a7806bc631499b9ef9ed935849ee088e",
+    "src/models/vce_model.py": "9f9870e7cb280d967c8b2a8a25fa982bb94aa8f4db4744f3afa84aecd5a785bf",
+    "experiments/ecir/radius_v9.py": "395a5c1749f74b5aff47b7c3e19b20a5da278e21ceb12332d0ac889b77ec6614",
+    "experiments/ecir/radius_v9_storage.py": "1a2ad1226b91d5223515a5564ec9e74e94d106452f66e738be1cc16fa98c18dd"
+  },
+  "fit_manifest_sha256": "2bc9e57a6659704425ab3f9e000392496644d7caef30a3f013a1f1d7f026fc02",
+  "result_manifest_sha256": "353a4d4d18f10d9fef9311c4830014634368cfb49469c5bcb7d60f1a8b688592",
+  "bootstrap": 10000,
+  "files": {
+    "REPORT.md": "899c138be783cbac56c8f2a2113d5463852435f4f914aac5d143a5842fb58217",
+    "analysis_spec.json": "30a1c0018c61c3fcaa3499f8726126bcc218b0b48971cfb38805228b77d90dcb",
+    "fixed_validation.csv": "3e0b349983423a1e5d9bdecb3b9ce99b2f9ee48037aaa74230c4cd19de539af5",
+    "metrics.csv": "410053f2b056dd04dcf406d0c7b9061263467df7e6b612606e5cd8dce984e3bd",
+    "paired_comparisons.csv": "be9cbd9720d069bbdb94444d6efacc2a89e4a3d99fb960042050859c620b6c85",
+    "selection.json": "854738fc7b8c05c3d926819f07f64ceab97f3a99d44f623525c668fcb7c678f8"
+  }
+}

@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{lrrrrrr}
+\toprule
+Dataset & Median $\kappa$ & Median radius & $\kappa$ at min & $\kappa$ at max & $\rho$(radius,len.) & $\rho$(radius,coh.) \\
+\midrule
+talkplay & 500.00 & 2.56$^\circ$ & 0.0\% & 99.9\% & -- & 0.047 \\
+ml1m & 37.49 & 9.28$^\circ$ & 36.4\% & 0.2\% & 0.005 & -0.388 \\
+lastfm & 10.00 & 17.55$^\circ$ & 100.0\% & 0.0\% & -- & -- \\
+amazon\_music & 32.95 & 9.88$^\circ$ & 29.6\% & 0.0\% & 0.582 & -0.193 \\
+\bottomrule
+\end{tabular}
+\caption{Validation-set adaptive-spread diagnostics pooled across training seeds. Radius is $\arctan(1/\sqrt{\kappa})$.}
+\label{tab:ecir-kappa-diagnostics}
+\end{table*}

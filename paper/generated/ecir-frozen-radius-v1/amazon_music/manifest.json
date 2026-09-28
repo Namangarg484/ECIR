@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "experiment": "ecir-frozen-center-radius-report",
+  "fit_manifest_sha256": "4434f05d2805521942778fb17c784e8859d06ae7a9f48afc876cdd66fad32a8f",
+  "result_manifest_sha256": "8b76d130b88ac8bf09f00ef5897c501b4b9f671f98635f5b4ddb77d3f57bab90",
+  "source_sha256": "4b11b131f2150891452c9d8766fd22376f5c6a57f6f1d5a9fb9844a840374413",
+  "bootstrap_replicates": 10000,
+  "files": {
+    "REPORT.md": "3f591ce46eb2976f5798af6b1f640aa59b061e0a810243c5e55467248ac98f15",
+    "frozen_center_radius.tex": "bfdc142f918c03f6daee469f05a90f03a8886e534150295a8eec87d25d45627f",
+    "metrics.csv": "40055e27540c9d01d626750d4de158dedd69992d5a3f5959c00a4d16a94b00cc",
+    "paired_comparisons.csv": "69226f33ded9fa7e036791fda4caa3ef7e157550863136cd1567dd7ca250a2d6",
+    "validation_kappa.csv": "9fb386a5caa64aca56b98ce31f9b19cff747be5cdfee56630b77c1f054ad1143"
+  }
+}

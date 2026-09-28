@@ -1,0 +1,88 @@
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+Method & NDCG@10 & R@10 & R@50 & MRR@50 \\
+\midrule
+Popularity & 0.00033 & 0.00100 & 0.00800 & 0.00043 \\
+Last-item cosine & 0.01685 & 0.02900 & 0.07700 & 0.01520 \\
+Transition-kNN & 0.02108 & 0.02700 & 0.03500 & 0.01952 \\
+Content-SASRec & 0.01871 & 0.03860 & 0.11420 & 0.01596 \\
+Uniform centroid & 0.02120 & 0.03900 & 0.12400 & 0.01956 \\
+Weighted PRF & 0.02585 & 0.04700 & 0.12200 & 0.02264 \\
+Learned centroid & 0.02461 & 0.04460 & 0.13260 & 0.02239 \\
+Weighted PRF + fixed spread & 0.02465 & 0.04560 & 0.12190 & 0.02160 \\
+Learned centroid + fixed spread & 0.02548 & 0.04604 & 0.13238 & 0.02296 \\
+Full (adaptive spread) & \textbf{0.02600} & \textbf{0.04716} & \textbf{0.13312} & \textbf{0.02322} \\
+\bottomrule
+\end{tabular}
+\caption{Full-catalog results on talkplay. Means average all declared repetitions; dispersion is reported separately.}
+\label{tab:ecir-results-talkplay}
+\end{table}
+
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+Method & NDCG@10 & R@10 & R@50 & MRR@50 \\
+\midrule
+Popularity & 0.02046 & 0.04259 & 0.13656 & 0.01796 \\
+Last-item cosine & 0.02252 & 0.03779 & 0.10292 & 0.02066 \\
+Transition-kNN & \textbf{0.10279} & \textbf{0.17219} & 0.33427 & \textbf{0.08889} \\
+Content-SASRec & 0.10048 & 0.17179 & \textbf{0.34299} & 0.08628 \\
+Uniform centroid & 0.01314 & 0.02768 & 0.10308 & 0.01199 \\
+Weighted PRF & 0.01397 & 0.02917 & 0.10557 & 0.01265 \\
+Learned centroid & 0.01864 & 0.03895 & 0.13682 & 0.01659 \\
+Weighted PRF + fixed spread & 0.01387 & 0.02887 & 0.10486 & 0.01261 \\
+Learned centroid + fixed spread & 0.01871 & 0.03905 & 0.13621 & 0.01665 \\
+Full (adaptive spread) & 0.01872 & 0.03866 & 0.13608 & 0.01675 \\
+\bottomrule
+\end{tabular}
+\caption{Full-catalog results on ml1m. Means average all declared repetitions; dispersion is reported separately.}
+\label{tab:ecir-results-ml1m}
+\end{table}
+
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+Method & NDCG@10 & R@10 & R@50 & MRR@50 \\
+\midrule
+Popularity & 0.03339 & 0.06340 & \textbf{0.17208} & 0.02865 \\
+Last-item cosine & 0.00463 & 0.00852 & 0.02664 & 0.00419 \\
+Transition-kNN & 0.03552 & 0.06287 & 0.14491 & \textbf{0.03078} \\
+Content-SASRec & \textbf{0.03697} & \textbf{0.06979} & 0.13628 & 0.03003 \\
+Uniform centroid & 0.01451 & 0.02930 & 0.06819 & 0.01170 \\
+Weighted PRF & 0.01351 & 0.02557 & 0.06287 & 0.01158 \\
+Learned centroid & 0.01742 & 0.03399 & 0.07501 & 0.01447 \\
+Weighted PRF + fixed spread & 0.01386 & 0.02653 & 0.06297 & 0.01170 \\
+Learned centroid + fixed spread & 0.01761 & 0.03516 & 0.07575 & 0.01427 \\
+Full (adaptive spread) & 0.01749 & 0.03495 & 0.07544 & 0.01418 \\
+\bottomrule
+\end{tabular}
+\caption{Full-catalog results on lastfm. Means average all declared repetitions; dispersion is reported separately.}
+\label{tab:ecir-results-lastfm}
+\end{table}
+
+\begin{table}[t]
+\centering\scriptsize
+\begin{tabular}{lrrrr}
+\toprule
+Method & NDCG@10 & R@10 & R@50 & MRR@50 \\
+\midrule
+Popularity & 0.00000 & 0.00000 & 0.00819 & 0.00025 \\
+Last-item cosine & \textbf{0.05602} & 0.08272 & 0.12940 & \textbf{0.05016} \\
+Transition-kNN & 0.00491 & 0.00491 & 0.01147 & 0.00512 \\
+Content-SASRec & 0.00885 & 0.01818 & 0.04701 & 0.00737 \\
+Uniform centroid & 0.05145 & 0.08108 & 0.13677 & 0.04489 \\
+Weighted PRF & 0.05560 & \textbf{0.08518} & 0.13432 & 0.04898 \\
+Learned centroid & 0.05173 & 0.08223 & \textbf{0.13808} & 0.04494 \\
+Weighted PRF + fixed spread & 0.05544 & 0.08485 & 0.13440 & 0.04888 \\
+Learned centroid + fixed spread & 0.05203 & 0.08282 & 0.13802 & 0.04513 \\
+Full (adaptive spread) & 0.05205 & 0.08290 & 0.13769 & 0.04513 \\
+\bottomrule
+\end{tabular}
+\caption{Full-catalog results on amazon\_music. Means average all declared repetitions; dispersion is reported separately.}
+\label{tab:ecir-results-amazon-music}
+\end{table}
+

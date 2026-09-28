@@ -1,0 +1,16 @@
+{
+  "experiment": "ecir-matched-radius-report",
+  "selection_manifest_sha256": "d09e2760dcd5f9d0e52becb059de077b29e69af00aabd2b099d5427ad18b96b4",
+  "result_manifest_sha256": "8b76d130b88ac8bf09f00ef5897c501b4b9f671f98635f5b4ddb77d3f57bab90",
+  "source_sha256": {
+    "experiments/ecir/matched_radius_selection.py": "2d1caebb970aba3b5e1df858eb511bbfbbcd803c997b4207a8b60884d3586359",
+    "experiments/ecir/review_common.py": "9202dfa69c06931b69a379f02eb54c15d95450c553906897eb4bdf681e54589a"
+  },
+  "bootstrap": 10000,
+  "files": {
+    "REPORT.md": "f1fd30bb32e37b7286ec0570bb946264857421d1b9e14214c72ebb9841e59f51",
+    "metrics.csv": "0ff19c385c8487891d9efd9ab8f668b40f13060d4d273e503c802e836fbfbe81",
+    "paired_comparisons.csv": "ee17dd572b9366632210362d8685d88784b1e33d87282820d988c5edffb74d14",
+    "selection.json": "3ccb9c925cc7e8b9c0da5403c24c63996cb9aa5ecb6e52649348b64f433c4dbe"
+  }
+}

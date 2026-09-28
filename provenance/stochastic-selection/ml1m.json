@@ -1,0 +1,166 @@
+{
+  "inference_seeds": [
+    3101,
+    3102,
+    3103,
+    3104,
+    3105,
+    3106,
+    3107,
+    3108,
+    3109,
+    3110
+  ],
+  "methods": {
+    "weighted_fixed": {
+      "params": {
+        "kappa": 50.0
+      },
+      "expected_validation": {
+        "NDCG@10": 0.015940075913514852,
+        "Recall@10": 0.03410672853828307,
+        "Recall@50": 0.11645674511103746,
+        "MRR@50": 0.013960060001753821
+      }
+    },
+    "learned_fixed": {
+      "params": {
+        "lr": 0.0001,
+        "kappa": 500.0
+      },
+      "expected_validation": {
+        "NDCG@10": 0.022318779051231582,
+        "Recall@10": 0.04463042757706331,
+        "Recall@50": 0.1523201856148492,
+        "MRR@50": 0.0202228902720775
+      },
+      "original_kappa": 100.0,
+      "selection_changed": true,
+      "checkpoints": {
+        "42": "learned_fixed.seed-42.pt",
+        "123": "learned_fixed.seed-123.pt",
+        "456": "learned_fixed.seed-456.pt",
+        "789": "learned_fixed.seed-789.pt",
+        "2026": "learned_fixed.seed-2026.pt"
+      }
+    },
+    "full": {
+      "params": {
+        "lr": 0.0001
+      },
+      "checkpoints": {
+        "42": "full.seed-42.pt",
+        "123": "full.seed-123.pt",
+        "456": "full.seed-456.pt",
+        "789": "full.seed-789.pt",
+        "2026": "full.seed-2026.pt"
+      }
+    }
+  },
+  "candidates": [
+    {
+      "method": "weighted_fixed",
+      "params": {
+        "kappa": 10.0
+      },
+      "expected_validation": {
+        "NDCG@10": 0.015750211974442922,
+        "Recall@10": 0.03365926416970501,
+        "Recall@50": 0.11508120649651972,
+        "MRR@50": 0.013835512681760687
+      }
+    },
+    {
+      "method": "weighted_fixed",
+      "params": {
+        "kappa": 50.0
+      },
+      "expected_validation": {
+        "NDCG@10": 0.015940075913514852,
+        "Recall@10": 0.03410672853828307,
+        "Recall@50": 0.11645674511103746,
+        "MRR@50": 0.013960060001753821
+      }
+    },
+    {
+      "method": "weighted_fixed",
+      "params": {
+        "kappa": 100.0
+      },
+      "expected_validation": {
+        "NDCG@10": 0.01592389215495854,
+        "Recall@10": 0.0341564468014584,
+        "Recall@50": 0.11635730858468678,
+        "MRR@50": 0.013927508265502764
+      }
+    },
+    {
+      "method": "weighted_fixed",
+      "params": {
+        "kappa": 500.0
+      },
+      "expected_validation": {
+        "NDCG@10": 0.015871758641433566,
+        "Recall@10": 0.03413987404706662,
+        "Recall@50": 0.11632416307590321,
+        "MRR@50": 0.013873160802510703
+      }
+    },
+    {
+      "method": "learned_fixed",
+      "params": {
+        "lr": 0.0001,
+        "kappa": 10.0
+      },
+      "source_checkpoint": "learned_fixed.candidate-0.seed-42.pt",
+      "expected_validation": {
+        "NDCG@10": 0.02180846567931475,
+        "Recall@10": 0.04401723566456745,
+        "Recall@50": 0.14651972157772622,
+        "MRR@50": 0.019515052146709518
+      }
+    },
+    {
+      "method": "learned_fixed",
+      "params": {
+        "lr": 0.0001,
+        "kappa": 50.0
+      },
+      "source_checkpoint": "learned_fixed.candidate-1.seed-42.pt",
+      "expected_validation": {
+        "NDCG@10": 0.02199247598485215,
+        "Recall@10": 0.04451441829632084,
+        "Recall@50": 0.1484255883327809,
+        "MRR@50": 0.019623738238484865
+      }
+    },
+    {
+      "method": "learned_fixed",
+      "params": {
+        "lr": 0.0001,
+        "kappa": 100.0
+      },
+      "source_checkpoint": "learned_fixed.candidate-2.seed-42.pt",
+      "expected_validation": {
+        "NDCG@10": 0.022008509255759718,
+        "Recall@10": 0.04444812727875373,
+        "Recall@50": 0.14898906198210143,
+        "MRR@50": 0.01968417675095052
+      }
+    },
+    {
+      "method": "learned_fixed",
+      "params": {
+        "lr": 0.0001,
+        "kappa": 500.0
+      },
+      "source_checkpoint": "learned_fixed.candidate-3.seed-42.pt",
+      "expected_validation": {
+        "NDCG@10": 0.022318779051231582,
+        "Recall@10": 0.04463042757706331,
+        "Recall@50": 0.1523201856148492,
+        "MRR@50": 0.0202228902720775
+      }
+    }
+  ]
+}

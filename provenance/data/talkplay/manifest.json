@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "dataset": "talkplay",
+  "split_seed": 2026,
+  "validation_fraction": 0.1,
+  "notes": {
+    "protocol": "official session-disjoint test; validation sessions from train",
+    "train_duplicate_sequences_removed": 1,
+    "raw_train_sessions": 15199,
+    "raw_test_sessions": 1000,
+    "test_unique_eligible_length_sequences": 1000,
+    "embedding": "frozen supplied CLAP; upstream pretraining provenance not certified"
+  },
+  "counts": {
+    "train": {
+      "assigned": 95746,
+      "retained": 95746
+    },
+    "validation": {
+      "assigned": 1520,
+      "retained": 1520
+    },
+    "test": {
+      "assigned": 1000,
+      "retained": 1000
+    }
+  },
+  "catalog_size": 46579,
+  "embedding_dim": 512,
+  "missing_item_texts": 0,
+  "sources": {
+    "train_dataset.jsonl": "fbae568f638882ce058978c3899cde9fe5f10da5d676a043f2a7f863ea5977b1",
+    "test_dataset.jsonl": "caa4a59b71193bf5167859c919a392a7f2544abd7c8dc7c8050a4c250ef60478",
+    "data/TalkPlayData-Challenge-Track-Metadata/track_metadata.jsonl": "e23e0251779019d6b510f8713b863756c6fd34e2262bed862e206ee4c526d900",
+    "cache/embeddings_track_embeddings_track_id_audio-laion_clap_2295310bfe98.pkl": "5cc2c1fdc89c7b21d608de5a4ccd2fca919ffe26c7f8c2251afade7e4891f9c2"
+  },
+  "files": {
+    "catalog.json": "82051bdb0ec1d21f140384c07a7f90848d44f5f939340547e6579d4268d4eef2",
+    "embeddings.npy": "3430c26c22d4d7d273c982c3b7223515d0602c68a5f88b20224fe2d6963a4ef9",
+    "train.jsonl": "e4c1dfbed5970fd28bb171079527f428896cf0c1ead41c79504a82f813ab5759",
+    "validation.jsonl": "6756ba951834c93d0ad1529725359eb1bc0964675a24e0d48a7143eda76497bf",
+    "test.jsonl": "11985ba733813635dcbb6149a4c1fe56ea7050808701f14e206841d897d211a3"
+  },
+  "prepare_source_sha256": "41b2a13793453a570011646f8d69aefc6acf1a42cb21a3e3829b52d8603ab941",
+  "protocol_source_sha256": "e70c2e17d5955c5c372701dcd7885832fc447b02b0d31d3c4296040923e39c01"
+}

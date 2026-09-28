@@ -1,0 +1,14 @@
+{
+  "seeds": [42, 123, 456, 789, 2026],
+  "epochs": 50,
+  "batch_size": 128,
+  "learning_rates": [0.0001],
+  "fixed_kappas": [10.0, 50.0, 100.0, 500.0],
+  "weight_decay": 0.01,
+  "patience": 7,
+  "max_context": 10,
+  "negative_count": 64,
+  "samples": 5,
+  "temperature": 0.07,
+  "selection_seed": 42
+}

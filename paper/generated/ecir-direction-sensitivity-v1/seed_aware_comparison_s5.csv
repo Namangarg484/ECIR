@@ -1,0 +1,2 @@
+comparison,samples,mean_difference,hierarchical_95_low,hierarchical_95_high,positive_training_seeds,training_seeds,inference_seeds,clusters,replicates
+full - learned_fixed,5,0.0005260891821581681,-0.0004942731731613647,0.0016176662525545567,4,5,10,1000,10000

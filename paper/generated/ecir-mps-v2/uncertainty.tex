@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{llrrr}
+\toprule
+Dataset & Method & NDCG@10 & Train SD & Inference SD \\
+\midrule
+talkplay & Weighted PRF + fixed spread & 0.02465 & 0.00000 & 0.00054 \\
+talkplay & Learned centroid + fixed spread & 0.02548 & 0.00101 & 0.00050 \\
+talkplay & Full (adaptive spread) & 0.02600 & 0.00105 & 0.00034 \\
+ml1m & Weighted PRF + fixed spread & 0.01387 & 0.00000 & 0.00032 \\
+ml1m & Learned centroid + fixed spread & 0.01871 & 0.00032 & 0.00018 \\
+ml1m & Full (adaptive spread) & 0.01872 & 0.00052 & 0.00025 \\
+lastfm & Weighted PRF + fixed spread & 0.01386 & 0.00000 & 0.00027 \\
+lastfm & Learned centroid + fixed spread & 0.01761 & 0.00048 & 0.00069 \\
+lastfm & Full (adaptive spread) & 0.01749 & 0.00070 & 0.00070 \\
+amazon\_music & Weighted PRF + fixed spread & 0.05544 & 0.00000 & 0.00032 \\
+amazon\_music & Learned centroid + fixed spread & 0.05203 & 0.00014 & 0.00045 \\
+amazon\_music & Full (adaptive spread) & 0.05205 & 0.00022 & 0.00063 \\
+\bottomrule
+\end{tabular}
+\caption{Separate training- and inference-randomness dispersion. Inference SD is the pooled within-training-seed sample SD over declared inference seeds.}
+\label{tab:ecir-uncertainty}
+\end{table*}

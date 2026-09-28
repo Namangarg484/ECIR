@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "dataset": "ml1m",
+  "split_seed": 2026,
+  "validation_fraction": 0.1,
+  "notes": {
+    "protocol": "per-user chronological leave-two-out, positive rating >=4, first unique item occurrence",
+    "eligible_users_before_embedding_checks": 6034,
+    "embedding": "local frozen MiniLM; fresh encoding of static metadata only",
+    "metadata": "static item title/genres or store",
+    "test_context_includes_validation_event": true
+  },
+  "counts": {
+    "train": {
+      "assigned": 557170,
+      "retained": 557170
+    },
+    "validation": {
+      "assigned": 6034,
+      "retained": 6034
+    },
+    "test": {
+      "assigned": 6034,
+      "retained": 6034
+    }
+  },
+  "catalog_size": 3883,
+  "embedding_dim": 384,
+  "missing_item_texts": 0,
+  "sources": {
+    "data/ml-1m/ml-1m/movies.dat": "0140fc2356357c1a851d0f52e893a1e4d3696df632c4141cea8d5bc3d621f0b9",
+    "data/ml-1m/ml-1m/ratings.dat": "506d64ca44484487c11dc2d9a28de5c54948213e6b96285e298afe28d6ea4e0f",
+    "models/minilm/1_Pooling/config.json": "029891eaab443d10165e66e6f3d5d9008a16b712481f71ae7c938234e8fdeca1",
+    "models/minilm/README.md": "7dfc82496ec33f906b5b0d6750c1e2397da6530c74d1ae3568c55bc2739125e7",
+    "models/minilm/config.json": "d77299ad598d5da8e48803146598db5cccbfce6ab2dfeec0f65a15c2bda42967",
+    "models/minilm/config_sentence_transformers.json": "45737668e5aad7cbc3d3668ca6e70fb25e5b9cde21ee5b5a810939e172ada09b",
+    "models/minilm/model.safetensors": "675124690d56e46f07b91be24721b00328dcf35c9962067d94d2894dc6970402",
+    "models/minilm/modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "models/minilm/sentence_bert_config.json": "2713ef7170fbb7e99cf4c4d8a1685642b0454b35f606b0f3b3b23b2786bc0c6c",
+    "models/minilm/tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+    "models/minilm/tokenizer_config.json": "8646525d0adef50bbbfde19b956023be4d68e28ee9ef68960eba5e60b2b10232"
+  },
+  "files": {
+    "catalog.json": "b926bb96dbcdc26807258058361f8b1d48a460ce18fc51ead9f40bc01c25a202",
+    "embeddings.npy": "c980c1372bf1f7903d3225443ba2839c9ccd1ebcdfd92313c8a8929bf17de4b1",
+    "train.jsonl": "cfaedfbd907c25ce069c7116e170c6e3c5a19753dd8c03ecbae4c761ac87d1ef",
+    "validation.jsonl": "61dc72ff9d875f82b2cc1caa33c0f4bee9061967ce0e42c30643cf7298fe4512",
+    "test.jsonl": "cec2736e0ced767b9fb0f685598fbd87cb3b46dcb0f4acf555729def040a7d07"
+  },
+  "prepare_source_sha256": "41b2a13793453a570011646f8d69aefc6acf1a42cb21a3e3829b52d8603ab941",
+  "protocol_source_sha256": "e70c2e17d5955c5c372701dcd7885832fc447b02b0d31d3c4296040923e39c01"
+}

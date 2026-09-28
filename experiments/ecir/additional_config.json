@@ -1,0 +1,30 @@
+{
+  "session_knn": {
+    "neighbor_counts": [50, 100, 250, 500],
+    "recency_decays": [0.7, 0.85, 1.0],
+    "max_context": 10,
+    "popularity_backoff": 1e-12
+  },
+  "efficiency": {
+    "training_seed": 42,
+    "inference_seed": 3101,
+    "batch_size": 128,
+    "warmup_batches": 3,
+    "measured_batches": 10
+  },
+  "diagnostics": {
+    "split": "validation",
+    "training_seeds": [42, 123, 456, 789, 2026],
+    "batch_size": 128,
+    "max_context": 10,
+    "boundary_tolerance": 0.001
+  },
+  "direction_sensitivity": {
+    "dataset": "talkplay",
+    "split": "test",
+    "methods": ["learned_fixed", "full"],
+    "sample_counts": [1, 2, 5, 10, 20],
+    "training_seeds": [42, 123, 456, 789, 2026],
+    "inference_seeds": [3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108, 3109, 3110]
+  }
+}

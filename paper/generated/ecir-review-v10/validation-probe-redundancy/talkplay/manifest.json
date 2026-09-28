@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "experiment": "ecir-validation-probe-redundancy-report",
+  "result_manifest_sha256": "37d5e39f07b7fcb07759ea4bcb22b8009aacbd14fe54558c1472eec2ecd9fd00",
+  "test_report_manifest_sha256": "f7dde692b0592f6c890d39012f42a7789a38b094e20d0d86175f867d01155fce",
+  "source_sha256": {
+    "experiments/ecir/validation_probe_redundancy.py": "29a2fb94f7e5397acb99da41c119f3cf0719451fae3a682ab0bd90f7c0cbea2c",
+    "experiments/ecir/review_common.py": "9202dfa69c06931b69a379f02eb54c15d95450c553906897eb4bdf681e54589a"
+  },
+  "files": {
+    "REPORT.md": "59625b2030d47d5065a77b76788fa55d29102f08bbc067578bafb131a9f5f5d9",
+    "validation_vs_test.csv": "72b8b299ea3c695a889e6e0008061f5fde7036346040d3306c17383d2041318d"
+  }
+}

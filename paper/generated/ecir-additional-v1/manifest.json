@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "experiment": "ecir-additional-report",
+  "result_manifests": {
+    "artifacts/ecir/additional-v1/session-knn-results/talkplay/manifest.json": "0d7876c0f5fdd4e7dcf64e53c6e8c93f65c17a277d63fa9712a868459cc2af8a",
+    "artifacts/ecir/mps-v2/stochastic-results/talkplay/manifest.json": "a763f9ac8e0047f762ef95a78b91dbf9164e16dd92c5aa321b7b40dd714d0eb2",
+    "artifacts/ecir/additional-v1/diagnostics/talkplay/manifest.json": "175bafa2af57737ba45ffa280481ec068c6140b4855added3d6a6d8f6b68a69a",
+    "artifacts/ecir/additional-v1/efficiency/talkplay/learned_centroid/manifest.json": "df014335c8e92eeae2c12a1141036b93c2cb2f935b95e258c8c56fb43518bf53",
+    "artifacts/ecir/additional-v1/efficiency/talkplay/learned_fixed/manifest.json": "ab655786d9e69c9a7bcfcf2be3c36800085f504c048d829ca36a3e35ffd0be2a",
+    "artifacts/ecir/additional-v1/efficiency/talkplay/full/manifest.json": "5c16cece2635d451884deb5e0fdc187adb792f6a0ea61e2033c346effb39ff64",
+    "artifacts/ecir/additional-v1/session-knn-results/ml1m/manifest.json": "555bfc3c15987b1ef35296ac7ff00959203e230aa4ad8ac8d2488602e843b1fa",
+    "artifacts/ecir/mps-v2/stochastic-results/ml1m/manifest.json": "81b93c2f7b4f0688b9028a538958dc330d7539dd1a57614687a4ee182f54c103",
+    "artifacts/ecir/additional-v1/diagnostics/ml1m/manifest.json": "b84dd702a1cb1726ea893bca22c2e6a1c53e752acab555e41d9abe11ba712e5e",
+    "artifacts/ecir/additional-v1/efficiency/ml1m/learned_centroid/manifest.json": "a08b5c73870be261cfccf28ff9333e089498da5dc3871f9decb40af3344540a0",
+    "artifacts/ecir/additional-v1/efficiency/ml1m/learned_fixed/manifest.json": "0d505adcdbc3e2476252d1c97820264cfbb21f33b4d235ef9a4ae72a6cfc14b6",
+    "artifacts/ecir/additional-v1/efficiency/ml1m/full/manifest.json": "e93780ce42fdc04e0d2687083147ee820b24f3810483c3da9d74bc7ce7471ee8",
+    "artifacts/ecir/additional-v1/session-knn-results/lastfm/manifest.json": "81ee3f4078e8c6ab481edf9bb1ad7a9f97aead52d1125a49a9bffe1dd100f123",
+    "artifacts/ecir/mps-v2/stochastic-results/lastfm/manifest.json": "9e8423dd50824a385e7d84d16dc62407078fe267f10b755811df417bbc4c145e",
+    "artifacts/ecir/additional-v1/diagnostics/lastfm/manifest.json": "f0bd996d797ffaa77346bad5c3d5b1948f0dcb477dcef4dc823eae631a3e0a61",
+    "artifacts/ecir/additional-v1/efficiency/lastfm/learned_centroid/manifest.json": "b4aa187d8a5f610d9b09aeaef37cce5ebc540923d7c2aac2c1d5daf1b276b8db",
+    "artifacts/ecir/additional-v1/efficiency/lastfm/learned_fixed/manifest.json": "b01f0de0f8a3ed2960a6026447501f02a4fdac02f94214061c2dc08246c12dad",
+    "artifacts/ecir/additional-v1/efficiency/lastfm/full/manifest.json": "97d110f1b45e46069a7b4434ee643207a301275be7880c22dd069365fb85273b",
+    "artifacts/ecir/additional-v1/session-knn-results/amazon_music/manifest.json": "0719ad9ad1cc91d4e91b8ddb4c681fef5cbf486b7f8e216227a98808fbcd8e03",
+    "artifacts/ecir/mps-v2/stochastic-results/amazon_music/manifest.json": "e34f85664329ab4ede1fed6c3d2aa7eb48466e96a2a12812ad3f20fc139929e2",
+    "artifacts/ecir/additional-v1/diagnostics/amazon_music/manifest.json": "3b770d633a4a101d383dd91e5a681d88acc2a7b2d3f428b462518dd36471ddc3",
+    "artifacts/ecir/additional-v1/efficiency/amazon_music/learned_centroid/manifest.json": "164c4958ff169d8dc4010cf7842631298a4af796a23ecae79960079f669b3562",
+    "artifacts/ecir/additional-v1/efficiency/amazon_music/learned_fixed/manifest.json": "fa014234036f9c1771ff7960faeecea30d1b6cfdcf0ed9094d8eb83426c53dc6",
+    "artifacts/ecir/additional-v1/efficiency/amazon_music/full/manifest.json": "a30c2f65e38f101a094e29c8da46b15f72a28184d07b92b43f6b7533a1b0e17d"
+  },
+  "report_source_sha256": "713d4b2ba6537c9c5bb65faa7e2b0221879829993d9fa8e52a9d4cc733de4e1b",
+  "bootstrap_replicates": 10000,
+  "files": {
+    "REPORT.md": "de4f010aaff88d7c80c7582937d8ecb38d74eba038419350031da0c24f34ddfe",
+    "efficiency.csv": "5de9711dbfb4ce3bdfd20a10d26a36d08a0a6dfd6ed9c3e525e54c13fe8a14a0",
+    "efficiency.tex": "b97740f74c7051476b3c725da40e91231b521bf7852cf1d34c0367801192fe8d",
+    "kappa_diagnostics.csv": "1cdaa23d2a89b3b1e85d69f39b1b49583829bb226ab6e9dc17376a783abffff3",
+    "kappa_diagnostics.tex": "22ad354e791e204629f40ef2e97c41844594fdec2dc1155561b139ae837c0836",
+    "paired_session_knn.csv": "1f7fbd24bab42667aa0dac3482eef887da696d956d810da7ca7e6c6c24613265",
+    "session_knn.csv": "ddf9aa7deeb9cb804f8cbfc4005bff406059cf896749d8c4b5190536fdd90132",
+    "session_knn.tex": "42c58379e036834be6760759b59a9f6c76782d2ef3ff3fa658b780c81d0fe46e"
+  }
+}

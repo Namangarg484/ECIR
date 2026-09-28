@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering\scriptsize
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Method & Probes & Query ms & Score ms & Total ms (p95) & Acc. $\Delta$ MiB & RSS MiB \\
+\midrule
+talkplay & Learned centroid & 1 & 0.349 & 0.094 & 0.457 (0.763) & 23.2 & 380.1 \\
+talkplay & Learned centroid + fixed spread & 5 & 0.239 & 0.237 & 0.474 (0.582) & 24.2 & 411.6 \\
+talkplay & Full (adaptive spread) & 5 & 0.231 & 0.240 & 0.469 (0.571) & 24.2 & 464.3 \\
+ml1m & Learned centroid & 1 & 0.384 & 0.008 & 0.393 (0.486) & 2.4 & 358.7 \\
+ml1m & Learned centroid + fixed spread & 5 & 0.297 & 0.036 & 0.334 (0.352) & 3.2 & 506.7 \\
+ml1m & Full (adaptive spread) & 5 & 0.309 & 0.035 & 0.344 (0.360) & 3.2 & 499.9 \\
+lastfm & Learned centroid & 1 & 0.320 & 0.026 & 0.346 (0.359) & 8.9 & 465.7 \\
+lastfm & Learned centroid + fixed spread & 5 & 0.232 & 0.070 & 0.314 (0.437) & 9.7 & 471.3 \\
+lastfm & Full (adaptive spread) & 5 & 0.243 & 0.081 & 0.324 (0.428) & 9.7 & 469.1 \\
+amazon\_music & Learned centroid & 1 & 0.230 & 0.079 & 0.307 (0.479) & 35.2 & 615.5 \\
+amazon\_music & Learned centroid + fixed spread & 5 & 0.224 & 0.292 & 0.515 (0.748) & 35.9 & 619.6 \\
+amazon\_music & Full (adaptive spread) & 5 & 0.234 & 0.291 & 0.531 (0.714) & 35.9 & 621.1 \\
+\bottomrule
+\end{tabular}
+\caption{Per-query inference cost on the recorded device. Times are medians over synchronized batches; parentheses give batch-level p95. Accelerator memory is the largest observed live-allocation increase and RSS is the process high-water mark.}
+\label{tab:ecir-efficiency}
+\end{table*}

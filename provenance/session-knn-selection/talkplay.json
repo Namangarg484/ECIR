@@ -1,0 +1,137 @@
+{
+  "method": "vsknn",
+  "selection_metric": "validation NDCG@10",
+  "selected": {
+    "neighbor_count": 100,
+    "recency_decay": 0.85,
+    "validation": {
+      "NDCG@10": 0.1264762138008308,
+      "Recall@10": 0.24276315789473685,
+      "Recall@50": 0.42894736842105263,
+      "MRR@50": 0.10071492453348878
+    }
+  },
+  "candidates": [
+    {
+      "neighbor_count": 50,
+      "recency_decay": 0.7,
+      "validation": {
+        "NDCG@10": 0.125967573853241,
+        "Recall@10": 0.2355263157894737,
+        "Recall@50": 0.41118421052631576,
+        "MRR@50": 0.10124811737523096
+      }
+    },
+    {
+      "neighbor_count": 100,
+      "recency_decay": 0.7,
+      "validation": {
+        "NDCG@10": 0.1252779547441341,
+        "Recall@10": 0.2361842105263158,
+        "Recall@50": 0.4125,
+        "MRR@50": 0.10022068113935441
+      }
+    },
+    {
+      "neighbor_count": 250,
+      "recency_decay": 0.7,
+      "validation": {
+        "NDCG@10": 0.12476536087854054,
+        "Recall@10": 0.23421052631578948,
+        "Recall@50": 0.4125,
+        "MRR@50": 0.10036148805213457
+      }
+    },
+    {
+      "neighbor_count": 500,
+      "recency_decay": 0.7,
+      "validation": {
+        "NDCG@10": 0.12476536087854054,
+        "Recall@10": 0.23421052631578948,
+        "Recall@50": 0.4125,
+        "MRR@50": 0.10036148805213457
+      }
+    },
+    {
+      "neighbor_count": 50,
+      "recency_decay": 0.85,
+      "validation": {
+        "NDCG@10": 0.12639671556432047,
+        "Recall@10": 0.24407894736842106,
+        "Recall@50": 0.42828947368421055,
+        "MRR@50": 0.10022991955807838
+      }
+    },
+    {
+      "neighbor_count": 100,
+      "recency_decay": 0.85,
+      "validation": {
+        "NDCG@10": 0.1264762138008308,
+        "Recall@10": 0.24276315789473685,
+        "Recall@50": 0.42894736842105263,
+        "MRR@50": 0.10071492453348878
+      }
+    },
+    {
+      "neighbor_count": 250,
+      "recency_decay": 0.85,
+      "validation": {
+        "NDCG@10": 0.12622643913450152,
+        "Recall@10": 0.24276315789473685,
+        "Recall@50": 0.4276315789473684,
+        "MRR@50": 0.10030038702592767
+      }
+    },
+    {
+      "neighbor_count": 500,
+      "recency_decay": 0.85,
+      "validation": {
+        "NDCG@10": 0.12622643913450152,
+        "Recall@10": 0.24276315789473685,
+        "Recall@50": 0.42828947368421055,
+        "MRR@50": 0.10031533917903772
+      }
+    },
+    {
+      "neighbor_count": 50,
+      "recency_decay": 1.0,
+      "validation": {
+        "NDCG@10": 0.1152600205640221,
+        "Recall@10": 0.22697368421052633,
+        "Recall@50": 0.4243421052631579,
+        "MRR@50": 0.09147373484809826
+      }
+    },
+    {
+      "neighbor_count": 100,
+      "recency_decay": 1.0,
+      "validation": {
+        "NDCG@10": 0.11456510483500865,
+        "Recall@10": 0.22697368421052633,
+        "Recall@50": 0.4276315789473684,
+        "MRR@50": 0.09081126100489961
+      }
+    },
+    {
+      "neighbor_count": 250,
+      "recency_decay": 1.0,
+      "validation": {
+        "NDCG@10": 0.11391901666044811,
+        "Recall@10": 0.2243421052631579,
+        "Recall@50": 0.4263157894736842,
+        "MRR@50": 0.09086923048738495
+      }
+    },
+    {
+      "neighbor_count": 500,
+      "recency_decay": 1.0,
+      "validation": {
+        "NDCG@10": 0.11391901666044811,
+        "Recall@10": 0.2243421052631579,
+        "Recall@50": 0.4263157894736842,
+        "MRR@50": 0.09086923048738495
+      }
+    }
+  ],
+  "historical_sessions": 13678
+}

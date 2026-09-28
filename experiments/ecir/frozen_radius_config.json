@@ -1,0 +1,10 @@
+{
+  "parameterizations": ["hard_clip", "smooth"],
+  "fixed_kappas": [10.0, 50.0, 100.0, 500.0],
+  "inference_seeds": [3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108, 3109, 3110],
+  "selection_inference_seed": 3101,
+  "radius_head_learning_rate": 0.0001,
+  "epochs": 50,
+  "patience": 7,
+  "boundary_tolerance": 0.001
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "experiment": "ecir-combined-report",
+  "result_manifests": {
+    "artifacts/revision/mps-v1/results/talkplay/manifest.json": "66d8457e29397b9974f215e5f700cecaecc936e9bc9f52409868653981c9167d",
+    "artifacts/ecir/mps-v2/baseline-results/talkplay/manifest.json": "2291d0c7d3cd5c61e204784a2865a54b5616f30eb056e974262fc3f67b6cbafd",
+    "artifacts/ecir/mps-v2/stochastic-results/talkplay/manifest.json": "a763f9ac8e0047f762ef95a78b91dbf9164e16dd92c5aa321b7b40dd714d0eb2",
+    "artifacts/revision/mps-v1/results/ml1m/manifest.json": "3257086d046e7d7f5e1ccdbaa6670b08ace4f3d539bdf7e94151fb9b2fb81284",
+    "artifacts/ecir/mps-v2/baseline-results/ml1m/manifest.json": "9879837c1f4265e15a40bd575ccae45c461a165e67677ba5e9c3254b01808147",
+    "artifacts/ecir/mps-v2/stochastic-results/ml1m/manifest.json": "81b93c2f7b4f0688b9028a538958dc330d7539dd1a57614687a4ee182f54c103",
+    "artifacts/revision/mps-v1/results/lastfm/manifest.json": "5603b57d84a2e35b59b3430167576e49c403f43bf12f440407ba01f23300eb72",
+    "artifacts/ecir/mps-v2/baseline-results/lastfm/manifest.json": "c378be0e916f71e8fe633810adc851b69768e4cfe1f64842b556f72f680bec2e",
+    "artifacts/ecir/mps-v2/stochastic-results/lastfm/manifest.json": "9e8423dd50824a385e7d84d16dc62407078fe267f10b755811df417bbc4c145e",
+    "artifacts/revision/mps-v1/results/amazon_music/manifest.json": "6109e77bbf60afa0cb64a082a8c5c9c29a48494cbfbca1fe2259877621f8cc56",
+    "artifacts/ecir/mps-v2/baseline-results/amazon_music/manifest.json": "fea3346ab5d75174bfaf5cfaf214d69c249b2c8aabf9da04ac7ea842a3541c83",
+    "artifacts/ecir/mps-v2/stochastic-results/amazon_music/manifest.json": "e34f85664329ab4ede1fed6c3d2aa7eb48466e96a2a12812ad3f20fc139929e2"
+  },
+  "report_source_sha256": "60f0c39d89c49385ca05fe2e9a4df25937616d32abeb4a84a1d40199051d13fd",
+  "bootstrap_replicates": 10000,
+  "files": {
+    "REPORT.md": "bd30c421b65d1da5502d0c09e352b46b892bceae7f0c1c8a7df22aea32b86ba4",
+    "metrics.csv": "6c6e5aabb90af883704f7f9ca8f028bd64c2a105524e7f6af3262ce49c16076a",
+    "ndcg10.pdf": "52bdc7de80bd41e907ac63d2a9cd58de4ea048bb8559d1946ffc747de5f52c22",
+    "ndcg10.png": "a026c5fc4586267185ad7c46ffd730ec25ad449f818a1192629cb4ec0f5a3433",
+    "paired_comparisons.csv": "bccc248492c62ae0b10f8592be19a4ab3a5f0831e14bf294d4b30ef065299c18",
+    "results.tex": "78d369d797b3148a1c619e30ee9a3668788d6202032727905663de7427e9ce31",
+    "uncertainty.tex": "5daff8aa5e22015e0c2d9c4f74ad47b711aacd1a3fc41a1986dc61b93c0b34a4"
+  }
+}

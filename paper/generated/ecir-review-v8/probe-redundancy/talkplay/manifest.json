@@ -1,0 +1,12 @@
+{
+  "experiment": "ecir-probe-redundancy-report",
+  "result_manifest_sha256": "3456c8fe75967059d6c683d188fd71ea9301a830a6538317156b798d374a5738",
+  "source_sha256": {
+    "experiments/ecir/probe_redundancy.py": "4030075f07eca83996ededf142a8314e01b86e38644e2242824c1c828ec63f1a",
+    "experiments/ecir/review_common.py": "9202dfa69c06931b69a379f02eb54c15d95450c553906897eb4bdf681e54589a"
+  },
+  "files": {
+    "REPORT.md": "00297a8f21b7594d404dc0479ced540a6ce3abd1b06499d69dcbc70f37131080",
+    "probe_redundancy.csv": "717d87c4f82e5d270c1b0a4d78bfbb63939d760a69d7c809d122c92cb43bf434"
+  }
+}

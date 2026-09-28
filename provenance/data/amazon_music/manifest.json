@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "dataset": "amazon_music",
+  "split_seed": 2026,
+  "validation_fraction": 0.1,
+  "notes": {
+    "protocol": "per-user chronological leave-two-out, positive rating >=4, first unique item occurrence",
+    "eligible_users_before_embedding_checks": 1221,
+    "embedding": "local frozen MiniLM; fresh encoding of static metadata only",
+    "metadata": "static item title/genres or store",
+    "test_context_includes_validation_event": true
+  },
+  "counts": {
+    "train": {
+      "assigned": 8973,
+      "retained": 8973
+    },
+    "validation": {
+      "assigned": 1221,
+      "retained": 1221
+    },
+    "test": {
+      "assigned": 1221,
+      "retained": 1221
+    }
+  },
+  "catalog_size": 70537,
+  "embedding_dim": 384,
+  "missing_item_texts": 1,
+  "sources": {
+    "meta_Digital_Music.jsonl.gz": "78ee3b1dc5e80dc0a20ac3221987e85b80977b17d6b61a84932f811c7ced921d",
+    "Digital_Music.jsonl.gz": "a598c5448cd55e9c1044aa8e1cb198642d5339190ae12b950397fc7b666c3f23",
+    "models/minilm/1_Pooling/config.json": "029891eaab443d10165e66e6f3d5d9008a16b712481f71ae7c938234e8fdeca1",
+    "models/minilm/README.md": "7dfc82496ec33f906b5b0d6750c1e2397da6530c74d1ae3568c55bc2739125e7",
+    "models/minilm/config.json": "d77299ad598d5da8e48803146598db5cccbfce6ab2dfeec0f65a15c2bda42967",
+    "models/minilm/config_sentence_transformers.json": "45737668e5aad7cbc3d3668ca6e70fb25e5b9cde21ee5b5a810939e172ada09b",
+    "models/minilm/model.safetensors": "675124690d56e46f07b91be24721b00328dcf35c9962067d94d2894dc6970402",
+    "models/minilm/modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "models/minilm/sentence_bert_config.json": "2713ef7170fbb7e99cf4c4d8a1685642b0454b35f606b0f3b3b23b2786bc0c6c",
+    "models/minilm/tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+    "models/minilm/tokenizer_config.json": "8646525d0adef50bbbfde19b956023be4d68e28ee9ef68960eba5e60b2b10232"
+  },
+  "files": {
+    "catalog.json": "bbc7d028dab653e1948abe371f7ee5b6aa46f6832011d1812ed2c82c7b2dce50",
+    "embeddings.npy": "f92f6be979d03537c80e672f21a8fbc2e33961014a6b8b0f0c203e134bdfbb25",
+    "train.jsonl": "5232d9299f0ca433f7ce2f57dd4c702bd0f2bb9f3be7b03bbc40f39e9ad6ebd9",
+    "validation.jsonl": "e027f2e0ed91249beb949e75aba33a69148ff9befab5ebdff600402c7c4ad535",
+    "test.jsonl": "29c74e66c8f28994b503594623c92067763f6451e5a321faa8cb7517637b575b"
+  },
+  "prepare_source_sha256": "41b2a13793453a570011646f8d69aefc6acf1a42cb21a3e3829b52d8603ab941",
+  "protocol_source_sha256": "e70c2e17d5955c5c372701dcd7885832fc447b02b0d31d3c4296040923e39c01"
+}

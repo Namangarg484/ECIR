@@ -1,0 +1,290 @@
+{
+  "centers": {
+    "42": {
+      "checkpoint": "learned_centroid.candidate-0.seed-42.pt",
+      "sha256": "d1964822d89ca7b05ff5678a22e9af3c740fc88263ab1d4d60828a5156bfbb0e"
+    },
+    "123": {
+      "checkpoint": "learned_centroid.selected.seed-123.pt",
+      "sha256": "bf8637222a635901e6fd2116b6b2906dbe98ad1876a4bca4c8726727ac2f49a1"
+    },
+    "456": {
+      "checkpoint": "learned_centroid.selected.seed-456.pt",
+      "sha256": "987615329f9e47cacf029dbcadad3bff7d14ce81683aa29a79986a27c9460231"
+    },
+    "789": {
+      "checkpoint": "learned_centroid.selected.seed-789.pt",
+      "sha256": "2b3e8446990ffaf37aebbe2d0fcc3e37d374929575ef937be869dafddfb13d7b"
+    },
+    "2026": {
+      "checkpoint": "learned_centroid.selected.seed-2026.pt",
+      "sha256": "cd9ec9fb4aad921f3ab47c14964592b7cc9943f0c03d2a2525d9d5974487b560"
+    }
+  },
+  "fixed": {
+    "global_kappa": 500.0,
+    "per_center_kappas": {
+      "42": 20.0,
+      "123": 50.0,
+      "456": 100.0,
+      "789": 250.0,
+      "2026": 400.0
+    },
+    "global_validation_means": [
+      0.06088329490929424,
+      0.06120384323416256,
+      0.06125628816214784,
+      0.06126548016666126,
+      0.0613189206143705,
+      0.06132907075729573,
+      0.061287938260424876,
+      0.06130088708800496,
+      0.06130877799538165,
+      0.06132761594373942,
+      0.06134442487138464,
+      0.061349619228762066
+    ],
+    "per_center_validation_means": [
+      [
+        0.06087997718917054,
+        0.06137471204727931,
+        0.06126132964076556,
+        0.061170867247372675,
+        0.061312983685794485,
+        0.061306440346489556,
+        0.061278985653090555,
+        0.06123578781357021,
+        0.061298317817397564,
+        0.061321194721292493,
+        0.06132954070233996,
+        0.06135629109611711
+      ],
+      [
+        0.06069614444412711,
+        0.061049750681258605,
+        0.06104770756992767,
+        0.06122037052008239,
+        0.06119174268417121,
+        0.06115014404315973,
+        0.061160430849157364,
+        0.06113637625913352,
+        0.061127876122390526,
+        0.061158717383339244,
+        0.06121808882466825,
+        0.06118861509868102
+      ],
+      [
+        0.06095423767377447,
+        0.06123398476721949,
+        0.06134379189824028,
+        0.06121178729150874,
+        0.06135273365049114,
+        0.06143474746096687,
+        0.06120321372458013,
+        0.06123631503144124,
+        0.06122366840276907,
+        0.06123689914684929,
+        0.061247622304389945,
+        0.061251174159233146
+      ],
+      [
+        0.061035363738081015,
+        0.06128908392209833,
+        0.0614710971299365,
+        0.06144171285210755,
+        0.06136296206149132,
+        0.06142298393898331,
+        0.06140880479686781,
+        0.061492700667152976,
+        0.06143086565645591,
+        0.06145008485898075,
+        0.06147789992218487,
+        0.061481100953534554
+      ],
+      [
+        0.060850751501318065,
+        0.061071684752957066,
+        0.06115751457186922,
+        0.06128266292223494,
+        0.06137418098990431,
+        0.06133103799687922,
+        0.06138825627842853,
+        0.061403255668726855,
+        0.06146316197789514,
+        0.06147118360823536,
+        0.06144897260334016,
+        0.06147091483624449
+      ]
+    ],
+    "grid": [
+      10.0,
+      20.0,
+      35.0,
+      50.0,
+      75.0,
+      100.0,
+      150.0,
+      250.0,
+      350.0,
+      400.0,
+      450.0,
+      500.0
+    ]
+  },
+  "heads": {
+    "hard_clip": {
+      "42": {
+        "checkpoint_directory": "heads/hard_clip/seed-42/epoch-004/training-state",
+        "best_epoch": 4,
+        "validation_ndcg10": 0.061275304177540714,
+        "epochs_completed": 11,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 128.347716410369,
+          "q10": 109.71089172363281,
+          "median": 126.74051666259766,
+          "q90": 149.65000915527344,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      },
+      "123": {
+        "checkpoint_directory": "heads/hard_clip/seed-123/epoch-005/training-state",
+        "best_epoch": 5,
+        "validation_ndcg10": 0.061389139452472666,
+        "epochs_completed": 12,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 59.01023641675344,
+          "q10": 39.695343017578125,
+          "median": 55.7889518737793,
+          "q90": 82.53749084472656,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      },
+      "456": {
+        "checkpoint_directory": "heads/hard_clip/seed-456/epoch-004/training-state",
+        "best_epoch": 4,
+        "validation_ndcg10": 0.06134484523273785,
+        "epochs_completed": 11,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 102.0584385752385,
+          "q10": 80.81303405761719,
+          "median": 99.44754791259766,
+          "q90": 126.17742919921875,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      },
+      "789": {
+        "checkpoint_directory": "heads/hard_clip/seed-789/epoch-002/training-state",
+        "best_epoch": 2,
+        "validation_ndcg10": 0.061510175433759084,
+        "epochs_completed": 9,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 205.80019144344095,
+          "q10": 198.47601318359375,
+          "median": 205.1898193359375,
+          "q90": 214.25787353515625,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      },
+      "2026": {
+        "checkpoint_directory": "heads/hard_clip/seed-2026/epoch-004/training-state",
+        "best_epoch": 4,
+        "validation_ndcg10": 0.06141429331340724,
+        "epochs_completed": 11,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 132.0591058379602,
+          "q10": 113.49575805664062,
+          "median": 130.63853454589844,
+          "q90": 153.20721435546875,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      }
+    },
+    "smooth": {
+      "42": {
+        "checkpoint_directory": "heads/smooth/seed-42/epoch-007/training-state",
+        "best_epoch": 7,
+        "validation_ndcg10": 0.061317020820638765,
+        "epochs_completed": 14,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 16.917993458834562,
+          "q10": 11.986366271972656,
+          "median": 14.818603515625,
+          "q90": 24.048120498657227,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      },
+      "123": {
+        "checkpoint_directory": "heads/smooth/seed-123/epoch-005/training-state",
+        "best_epoch": 5,
+        "validation_ndcg10": 0.06125558261795501,
+        "epochs_completed": 12,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 74.06222171142979,
+          "q10": 54.4202880859375,
+          "median": 71.10624694824219,
+          "q90": 97.7077407836914,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      },
+      "456": {
+        "checkpoint_directory": "heads/smooth/seed-456/epoch-006/training-state",
+        "best_epoch": 6,
+        "validation_ndcg10": 0.06141467087317963,
+        "epochs_completed": 13,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 27.259991648937227,
+          "q10": 17.36536407470703,
+          "median": 24.062618255615234,
+          "q90": 40.70841598510742,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      },
+      "789": {
+        "checkpoint_directory": "heads/smooth/seed-789/epoch-002/training-state",
+        "best_epoch": 2,
+        "validation_ndcg10": 0.06151376460254195,
+        "epochs_completed": 9,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 211.02030611155368,
+          "q10": 203.9010467529297,
+          "median": 210.42681884765625,
+          "q90": 219.23838806152344,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      },
+      "2026": {
+        "checkpoint_directory": "heads/smooth/seed-2026/epoch-004/training-state",
+        "best_epoch": 4,
+        "validation_ndcg10": 0.06140767219505374,
+        "epochs_completed": 11,
+        "kappa_statistics": {
+          "count": 1221,
+          "mean": 141.05711915862062,
+          "q10": 123.14842224121094,
+          "median": 139.6707305908203,
+          "q90": 161.40113830566406,
+          "fraction_near_minimum": 0.0,
+          "fraction_near_maximum": 0.0
+        }
+      }
+    }
+  }
+}

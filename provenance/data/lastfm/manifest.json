@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "dataset": "lastfm",
+  "split_seed": 2026,
+  "validation_fraction": 0.1,
+  "notes": {
+    "protocol": "deterministic unordered artist holdout",
+    "eligible_users_before_embedding_checks": 1877,
+    "embedding": "local frozen MiniLM; fresh encoding of static metadata only",
+    "metadata": "artist name only; no user tags",
+    "test_context_includes_validation_event": true
+  },
+  "counts": {
+    "train": {
+      "assigned": 87170,
+      "retained": 87170
+    },
+    "validation": {
+      "assigned": 1877,
+      "retained": 1877
+    },
+    "test": {
+      "assigned": 1877,
+      "retained": 1877
+    }
+  },
+  "catalog_size": 17632,
+  "embedding_dim": 384,
+  "missing_item_texts": 0,
+  "sources": {
+    "hetrec2011-lastfm-2k.zip": "6738f48195667ff03caaab4d32ca9a3133d8cc026b7c3cdaf6ce1010e913c59c",
+    "models/minilm/1_Pooling/config.json": "029891eaab443d10165e66e6f3d5d9008a16b712481f71ae7c938234e8fdeca1",
+    "models/minilm/README.md": "7dfc82496ec33f906b5b0d6750c1e2397da6530c74d1ae3568c55bc2739125e7",
+    "models/minilm/config.json": "d77299ad598d5da8e48803146598db5cccbfce6ab2dfeec0f65a15c2bda42967",
+    "models/minilm/config_sentence_transformers.json": "45737668e5aad7cbc3d3668ca6e70fb25e5b9cde21ee5b5a810939e172ada09b",
+    "models/minilm/model.safetensors": "675124690d56e46f07b91be24721b00328dcf35c9962067d94d2894dc6970402",
+    "models/minilm/modules.json": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf",
+    "models/minilm/sentence_bert_config.json": "2713ef7170fbb7e99cf4c4d8a1685642b0454b35f606b0f3b3b23b2786bc0c6c",
+    "models/minilm/tokenizer.json": "da0e79933b9ed51798a3ae27893d3c5fa4a201126cef75586296df9b4d2c62a0",
+    "models/minilm/tokenizer_config.json": "8646525d0adef50bbbfde19b956023be4d68e28ee9ef68960eba5e60b2b10232"
+  },
+  "files": {
+    "catalog.json": "c9dc028d1930a46407893e0b731fb17b47ea3ffa39d040bf2d5ff6ef483088e7",
+    "embeddings.npy": "7e6f73b47c3e042f7416c3dbbb3c655811c137d59f772bae185e6624622cad7e",
+    "train.jsonl": "215e6db822d870d0ff20a21936c6274d6a20e5ba6387ba02c2f62d6a26c08eef",
+    "validation.jsonl": "89d2d18efedbf189fdbc878439156f673a3881d16e5f49c078f3216e61f43e91",
+    "test.jsonl": "e7c047bb297dae8a373b4622d8ecbbaa5d2169acca3bf3ac12501e4f875ed7d9"
+  },
+  "prepare_source_sha256": "41b2a13793453a570011646f8d69aefc6acf1a42cb21a3e3829b52d8603ab941",
+  "protocol_source_sha256": "e70c2e17d5955c5c372701dcd7885832fc447b02b0d31d3c4296040923e39c01"
+}

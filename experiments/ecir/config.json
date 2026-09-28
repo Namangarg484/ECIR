@@ -1,0 +1,19 @@
+{
+  "seeds": [42, 123, 456, 789, 2026],
+  "selection_seed": 42,
+  "inference_seeds": [3101, 3102, 3103, 3104, 3105, 3106, 3107, 3108, 3109, 3110],
+  "sasrec": {
+    "hidden_dim": 256,
+    "num_layers": 2,
+    "num_heads": 4,
+    "dropouts": [0.1, 0.2],
+    "learning_rates": [0.0001, 0.0003],
+    "epochs": 50,
+    "patience": 7,
+    "batch_size": 128,
+    "negative_count": 64,
+    "temperature": 0.07,
+    "weight_decay": 0.01,
+    "max_context": 10
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "experiment": "ecir-target-support",
+  "datasets": [
+    "talkplay",
+    "ml1m",
+    "lastfm",
+    "amazon_music"
+  ],
+  "source_sha256": {
+    "experiments/ecir/target_support.py": "4d846f2dad17e6b67a6c9779ce063455e8aabe7f5e9391d2daa518a0e9518297",
+    "experiments/revision/protocol.py": "e70c2e17d5955c5c372701dcd7885832fc447b02b0d31d3c4296040923e39c01"
+  },
+  "inputs": {
+    "talkplay": {
+      "data_manifest_sha256": "b880f1e64aca350116d9ec4f149468366424f0f6232a788bb5f4047c126b352c",
+      "result_manifest_sha256": {
+        "primary": "66d8457e29397b9974f215e5f700cecaecc936e9bc9f52409868653981c9167d",
+        "baseline": "2291d0c7d3cd5c61e204784a2865a54b5616f30eb056e974262fc3f67b6cbafd",
+        "stochastic": "a763f9ac8e0047f762ef95a78b91dbf9164e16dd92c5aa321b7b40dd714d0eb2",
+        "session": "0d7876c0f5fdd4e7dcf64e53c6e8c93f65c17a277d63fa9712a868459cc2af8a"
+      },
+      "catalog_size": 46579
+    },
+    "ml1m": {
+      "data_manifest_sha256": "5936bb89ab4024cb850323b3ccf8d4f9258dc8523333483105ff8ffd3d625196",
+      "result_manifest_sha256": {
+        "primary": "3257086d046e7d7f5e1ccdbaa6670b08ace4f3d539bdf7e94151fb9b2fb81284",
+        "baseline": "9879837c1f4265e15a40bd575ccae45c461a165e67677ba5e9c3254b01808147",
+        "stochastic": "81b93c2f7b4f0688b9028a538958dc330d7539dd1a57614687a4ee182f54c103",
+        "session": "555bfc3c15987b1ef35296ac7ff00959203e230aa4ad8ac8d2488602e843b1fa"
+      },
+      "catalog_size": 3883
+    },
+    "lastfm": {
+      "data_manifest_sha256": "026c315270f197954ea2c3305609462467dd6c23ba5a71ee82d47719a2347b44",
+      "result_manifest_sha256": {
+        "primary": "5603b57d84a2e35b59b3430167576e49c403f43bf12f440407ba01f23300eb72",
+        "baseline": "c378be0e916f71e8fe633810adc851b69768e4cfe1f64842b556f72f680bec2e",
+        "stochastic": "9e8423dd50824a385e7d84d16dc62407078fe267f10b755811df417bbc4c145e",
+        "session": "81ee3f4078e8c6ab481edf9bb1ad7a9f97aead52d1125a49a9bffe1dd100f123"
+      },
+      "catalog_size": 17632
+    },
+    "amazon_music": {
+      "data_manifest_sha256": "d7442e591ab6c9b215146cbfddc22339b1ad51ebb5819e98d7ea0afbda73b75c",
+      "result_manifest_sha256": {
+        "primary": "6109e77bbf60afa0cb64a082a8c5c9c29a48494cbfbca1fe2259877621f8cc56",
+        "baseline": "fea3346ab5d75174bfaf5cfaf214d69c249b2c8aabf9da04ac7ea842a3541c83",
+        "stochastic": "e34f85664329ab4ede1fed6c3d2aa7eb48466e96a2a12812ad3f20fc139929e2",
+        "session": "0719ad9ad1cc91d4e91b8ddb4c681fef5cbf486b7f8e216227a98808fbcd8e03"
+      },
+      "catalog_size": 70537
+    }
+  },
+  "main_report_manifest_sha256": "f230052a155a18c1433910412bbc3c5006f162bcc2461fd353aca6db28323e97",
+  "session_report_manifest_sha256": "bf11c50c295680e5108a6a810ea1661d4203e12009f3b8fbbd8e8a18332dabe9",
+  "files": {
+    "target_coverage.csv": "6f0e0bf8e237e570e18b1a85af06cbd16c94f7777fac39640a88bcb6b8a804a3",
+    "warm_cold_metrics.csv": "e2f4d4df4e44d9e386467d846860fb1add8cdc66d21ac92d926b8bac76a64ba5",
+    "REPORT.md": "e21974ef33f19237015fe3694068ec0176f5b0263dc5a72c8abfb16789a1605c"
+  }
+}

@@ -1,0 +1,3 @@
+PASS
+Allowlisted text payload scanned for local home paths, usernames, hostnames, email addresses, Git remotes, and repository-owner URLs.
+Raw data, checkpoints, Git metadata, bytecode, PDFs, PNGs, and filesystem extended attributes are excluded.

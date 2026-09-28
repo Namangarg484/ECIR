@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "experiment": "ecir-radius-v9-report",
+  "dataset": "amazon_music",
+  "source_sha256": {
+    "experiments/ecir/frozen_radius.py": "4b11b131f2150891452c9d8766fd22376f5c6a57f6f1d5a9fb9844a840374413",
+    "experiments/revision/run.py": "b389dfe383d938f1cef77286248d41bf20bb6e115ae263e66cafa3ccce4bc1fe",
+    "experiments/revision/protocol.py": "e70c2e17d5955c5c372701dcd7885832fc447b02b0d31d3c4296040923e39c01",
+    "experiments/ecir/query_direction_sensitivity.py": "1b6aac32e1c0f774dd930766dd01e389a7806bc631499b9ef9ed935849ee088e",
+    "src/models/vce_model.py": "9f9870e7cb280d967c8b2a8a25fa982bb94aa8f4db4744f3afa84aecd5a785bf",
+    "experiments/ecir/radius_v9.py": "395a5c1749f74b5aff47b7c3e19b20a5da278e21ceb12332d0ac889b77ec6614",
+    "experiments/ecir/radius_v9_storage.py": "1a2ad1226b91d5223515a5564ec9e74e94d106452f66e738be1cc16fa98c18dd"
+  },
+  "fit_manifest_sha256": "582f67ddc0c8d813044e8ee4b5233a3d87041e8fdaf1b8e7eff98b12a0a77467",
+  "result_manifest_sha256": "83e102f6c51a34230d80246f486e7aee1259cea0d87cdcb38ca4425fcdf45f77",
+  "bootstrap": 10000,
+  "files": {
+    "REPORT.md": "556f3107929d4a34da27073af15a70a261451aaa6c7d92ca7f30b7d0cfa05e7f",
+    "analysis_spec.json": "bdd7d60a604fb65f5ddcbffd744943496cbfd9b8ebe96b888d692fb561c26c5e",
+    "fixed_validation.csv": "9fa57b25619bfe55e315d8936e05c513b24d337780f947704c55f197169372d3",
+    "metrics.csv": "db64141ba2b9e37cd0c88a0f30ff6413f80d286aa7c0d6ddbf538d09f656a472",
+    "paired_comparisons.csv": "2c3e7cab4b43cab245aea89d253817be188c435de1f5edc7b13b70a3119ac879",
+    "selection.json": "5e4d0ffd4e418d93cc8783df2f8d6813fad80d8c7e4e6ee4b77e9ad546f468f6"
+  }
+}

@@ -1,0 +1,5 @@
+# Isolated research environment. Record installed versions in every run manifest.
+numpy>=1.24,<3
+torch>=2.2,<3
+sentence-transformers>=3,<6
+matplotlib>=3.8,<4
