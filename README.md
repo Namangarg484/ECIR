@@ -21,8 +21,10 @@ to access the review materials.
 
 The ZIP contains the review source, code, configurations, aggregate results,
 and provenance. It excludes the institutional acknowledgement and Git history.
-It preserves the audited v13 snapshot, which predates adding the anonymous
-repository link; the current manuscript sources above include that link.
+It preserves the audited v13 snapshot, which predates the anonymous repository
+link and final bibliography corrections. The current manuscript sources above
+include both; [reference corrections](paper/REFERENCE_CORRECTIONS.md) records
+the supporting publication sources.
 It contains no compiled PDF. The final PDF's rendering, metadata, page count,
 and uploaded version must be checked separately.
 
