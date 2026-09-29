@@ -1,7 +1,10 @@
-PUBLIC REPOSITORY — NOT ANONYMOUS
-This repository includes an identifying repository URL and the requested institutional acknowledgement.
+REVIEW SNAPSHOT
+Current tracked review files omit the personal repository URL and institutional acknowledgement.
+Review access: https://anonymous.4open.science/r/ECIR-0BEE/README.md
+This describes current file contents only, not the source host's account identity or historical commits.
 The anonymous review artifact is review-artifact/ecir2027_anonymous_artifact_v13_final.zip.
 Only that ZIP's internal ANONYMITY_AUDIT.txt describes the anonymous payload scan.
 The ZIP excludes the acknowledgement and Git history; its SHA-256 sidecar identifies the audited bytes.
-The repository-root SHA256SUMS verifies the public snapshot, not anonymity.
+The repository-root SHA256SUMS verifies the current snapshot, not anonymity.
+The external anonymous mirror must be refreshed and checked separately after source updates.
 No compiled submission PDF is included or certified by this notice.

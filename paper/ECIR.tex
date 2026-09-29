@@ -1,7 +1,6 @@
 % ECIR 2027 full-paper submission draft, with completed v10 diagnostics.
 % Springer LNCS; maximum 12 content pages, references excluded.
-% Non-anonymous version with institutional acknowledgement.
-% Use ECIR_anonymous.tex or the audited anonymous artifact for double-blind review.
+% Double blind: keep authors, acknowledgments, artifact metadata, and paths anonymous.
 % Numerical sources: versioned reports under paper/generated/.
 % Rerun the submission audit and inspect the compiled PDF after editing.
 
@@ -21,9 +20,9 @@
 \newcommand{\method}{\textsc{ACE}}
 \newcommand{\norm}[1]{\left\lVert #1 \right\rVert_2}
 
-% Enabled at the author's request for this non-anonymous version.
+% Enable only for the non-anonymous version; keep false during review.
 \newif\ifincludeacknowledgements
-\includeacknowledgementstrue
+\includeacknowledgementsfalse
 
 \begin{document}
 
@@ -718,7 +717,7 @@ human participants are recruited.
 
 \paragraph{Reproducibility.}
 Code, experiment configurations, and aggregate results are available at
-\url{https://github.com/Namangarg484/ECIR}.
+\url{https://anonymous.4open.science/r/ECIR-0BEE/README.md}.
 The separate anonymous artifact documents exact commands, splits, validation selections,
 seed lists, and hash-linked results. Tables and figures use the same versioned
 reports. Selection never uses test metrics. Raw licensed data and large
@@ -739,8 +738,7 @@ sampled-negative objective. Query quality, vector budget, target support, and
 retrieval cost should be assessed separately.
 
 \ifincludeacknowledgements
-\section*{Acknowledgements}
-The paper is partially supported by the University of Piraeus Research Center.
+\input{paper/acknowledgements-camera-ready.tex}
 \fi
 
 % Flush content floats before references so the auxiliary marker gives a

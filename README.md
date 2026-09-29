@@ -1,29 +1,28 @@
 # ECIR 2027 Code and Reproducibility Materials
 
-Repository: [Namangarg484/ECIR](https://github.com/Namangarg484/ECIR)
+Repository: [Anonymous code and reproducibility materials](https://anonymous.4open.science/r/ECIR-0BEE/README.md)
 
 This artifact accompanies *Learning the Center or Exploring Its Neighborhood?
 A Controlled Study of Multi-Probe Session Retrieval*. It contains the
 implementation, frozen experiment configurations, exact launch scripts, unit
 tests, and aggregate files used by the manuscript.
 
-This public repository identifies its owner. For double-blind review, submit
-the separately packaged anonymous ZIP below; do not use this repository URL
-as an anonymous artifact link.
+Use the anonymous repository link above or the separate review ZIP below
+to access the review materials.
 
 ## Manuscript and review package
 
-- [Latest manuscript](paper/ECIR.tex): includes all final wording edits and the
-  acknowledgement, "The paper is partially supported by the University of
-  Piraeus Research Center." This version is non-anonymous and self-contained.
-- [Anonymous manuscript](paper/ECIR_anonymous.tex): preserved source matching
-  the audited v13 review package, with acknowledgements disabled.
+- [Latest manuscript](paper/ECIR.tex): anonymous source with all final wording
+  edits and the anonymous code link; institutional acknowledgements are omitted.
+- [Anonymous manuscript copy](paper/ECIR_anonymous.tex): the same review source.
 - [Submission abstract](paper/abstract.txt): synchronized with both versions.
 - [Anonymous review ZIP](review-artifact/ecir2027_anonymous_artifact_v13_final.zip)
   and its [SHA-256 checksum](review-artifact/ecir2027_anonymous_artifact_v13_final.zip.sha256).
 
 The ZIP contains the review source, code, configurations, aggregate results,
 and provenance. It excludes the institutional acknowledgement and Git history.
+It preserves the audited v13 snapshot, which predates adding the anonymous
+repository link; the current manuscript sources above include that link.
 It contains no compiled PDF. The final PDF's rendering, metadata, page count,
 and uploaded version must be checked separately.
 
@@ -75,14 +74,8 @@ Reproducing training therefore requires obtaining those inputs separately.
 
 ## Environment
 
-Python 3.11--3.13 is recommended. Clone the repository first:
-
-```bash
-git clone https://github.com/Namangarg484/ECIR.git
-cd ECIR
-```
-
-Then, from the repository or extracted artifact root:
+Python 3.11--3.13 is recommended. Download the repository from the anonymous
+page or extract the review ZIP. From the resulting repository/artifact root:
 
 ```bash
 python -m venv .venv-revision
@@ -206,7 +199,7 @@ reported experiment.
   and prepared-file hashes for each dataset.
 - `provenance/*-selection/`: validation scores and the selected primary,
   content-SASRec, stochastic, and V-SKNN configurations.
-- `paper/ECIR.tex`: latest manuscript with the institutional acknowledgement.
+- `paper/ECIR.tex`: anonymous manuscript with the anonymous repository link.
 - `paper/ECIR_anonymous.tex`: anonymous review manuscript.
 
 The manuscript tables and the human-readable reports derive from the same CSV
@@ -238,7 +231,7 @@ hostnames, email addresses, and repository-owner URLs. The archive's internal
 `SHA256SUMS` and `ANONYMITY_AUDIT.txt` apply only to its anonymous payload.
 The outer archive checksum is written beside the ZIP.
 
-The repository-root `SHA256SUMS` covers the public snapshot's files except
+The repository-root `SHA256SUMS` covers the current snapshot's files except
 itself and Git metadata. It is an integrity manifest, not an anonymity claim.
 The root `ANONYMITY_AUDIT.txt` explains this distinction.
 
