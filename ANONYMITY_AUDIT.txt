@@ -1,3 +1,7 @@
-PASS
-Allowlisted text payload scanned for local home paths, usernames, hostnames, email addresses, Git remotes, and repository-owner URLs.
-Raw data, checkpoints, Git metadata, bytecode, PDFs, PNGs, and filesystem extended attributes are excluded.
+PUBLIC REPOSITORY — NOT ANONYMOUS
+This repository includes an identifying repository URL and the requested institutional acknowledgement.
+The anonymous review artifact is review-artifact/ecir2027_anonymous_artifact_v13_final.zip.
+Only that ZIP's internal ANONYMITY_AUDIT.txt describes the anonymous payload scan.
+The ZIP excludes the acknowledgement and Git history; its SHA-256 sidecar identifies the audited bytes.
+The repository-root SHA256SUMS verifies the public snapshot, not anonymity.
+No compiled submission PDF is included or certified by this notice.

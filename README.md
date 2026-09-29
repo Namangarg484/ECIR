@@ -1,10 +1,40 @@
-# Anonymous ECIR 2027 Review Artifact
+# ECIR 2027 Code and Reproducibility Materials
+
+Repository: [Namangarg484/ECIR](https://github.com/Namangarg484/ECIR)
 
 This artifact accompanies *Learning the Center or Exploring Its Neighborhood?
 A Controlled Study of Multi-Probe Session Retrieval*. It contains the
 implementation, frozen experiment configurations, exact launch scripts, unit
-tests, and aggregate files used by the manuscript. It is intended for
-double-blind peer review.
+tests, and aggregate files used by the manuscript.
+
+This public repository identifies its owner. For double-blind review, submit
+the separately packaged anonymous ZIP below; do not use this repository URL
+as an anonymous artifact link.
+
+## Manuscript and review package
+
+- [Latest manuscript](paper/ECIR.tex): includes all final wording edits and the
+  acknowledgement, "The paper is partially supported by the University of
+  Piraeus Research Center." This version is non-anonymous and self-contained.
+- [Anonymous manuscript](paper/ECIR_anonymous.tex): preserved source matching
+  the audited v13 review package, with acknowledgements disabled.
+- [Submission abstract](paper/abstract.txt): synchronized with both versions.
+- [Anonymous review ZIP](review-artifact/ecir2027_anonymous_artifact_v13_final.zip)
+  and its [SHA-256 checksum](review-artifact/ecir2027_anonymous_artifact_v13_final.zip.sha256).
+
+The ZIP contains the review source, code, configurations, aggregate results,
+and provenance. It excludes the institutional acknowledgement and Git history.
+It contains no compiled PDF. The final PDF's rendering, metadata, page count,
+and uploaded version must be checked separately.
+
+To compile either manuscript with Springer LNCS and PGFPlots installed:
+
+```bash
+cd paper
+latexmk -pdf -interaction=nonstopmode -halt-on-error ECIR.tex
+# For the anonymous version instead:
+latexmk -pdf -interaction=nonstopmode -halt-on-error ECIR_anonymous.tex
+```
 
 ## What the artifact supports
 
@@ -45,7 +75,14 @@ Reproducing training therefore requires obtaining those inputs separately.
 
 ## Environment
 
-Python 3.11--3.13 is recommended. From the extracted artifact root:
+Python 3.11--3.13 is recommended. Clone the repository first:
+
+```bash
+git clone https://github.com/Namangarg484/ECIR.git
+cd ECIR
+```
+
+Then, from the repository or extracted artifact root:
 
 ```bash
 python -m venv .venv-revision
@@ -65,7 +102,8 @@ python -m unittest \
   experiments.revision.test_runtime \
   experiments.ecir.test_ecir \
   experiments.ecir.test_additional \
-  experiments.ecir.test_frozen_radius -v
+  experiments.ecir.test_frozen_radius \
+  experiments.ecir.test_submission_audit -v
 ```
 
 ## Required input layout
@@ -168,12 +206,13 @@ reported experiment.
   and prepared-file hashes for each dataset.
 - `provenance/*-selection/`: validation scores and the selected primary,
   content-SASRec, stochastic, and V-SKNN configurations.
-- `paper/ECIR.tex`: anonymous manuscript source corresponding to the artifact.
+- `paper/ECIR.tex`: latest manuscript with the institutional acknowledgement.
+- `paper/ECIR_anonymous.tex`: anonymous review manuscript.
 
 The manuscript tables and the human-readable reports derive from the same CSV
 files. Report manifests record hashes of their source result manifests and all
 generated outputs. The raw per-query result directories are intentionally not
-inside this lightweight review archive; they can be released with checkpoints
+inside this lightweight repository; they can be released with checkpoints
 after double-blind review, subject to venue policy and upstream licenses.
 
 ## Protocol safeguards
@@ -188,22 +227,36 @@ after double-blind review, subject to venue policy and upstream licenses.
 - Last.fm is explicitly treated as hash-ordered artist retrieval because the
   source counts do not provide an event chronology.
 
-## Anonymity and archive integrity
+## Review archive and repository integrity
 
-The archive is built with `scripts/build_ecir_anonymous_artifact.py`. The
+The separate ZIP in `review-artifact/` was built from the anonymous author
+workspace with `scripts/build_ecir_anonymous_artifact.py`. The
 builder uses an explicit allowlist, omits `.git`, raw data, checkpoints, caches,
 Python bytecode, PDFs, PNGs, and filesystem extended attributes, assigns fixed
 ZIP timestamps and permissions, and scans text and member names for home paths,
-hostnames, email addresses, and repository-owner URLs. `SHA256SUMS` covers every
-payload file; `ANONYMITY_AUDIT.txt` records the scan result. The outer archive
-checksum is written beside the ZIP.
+hostnames, email addresses, and repository-owner URLs. The archive's internal
+`SHA256SUMS` and `ANONYMITY_AUDIT.txt` apply only to its anonymous payload.
+The outer archive checksum is written beside the ZIP.
+
+The repository-root `SHA256SUMS` covers the public snapshot's files except
+itself and Git metadata. It is an integrity manifest, not an anonymity claim.
+The root `ANONYMITY_AUDIT.txt` explains this distinction.
+
+To verify the downloaded review ZIP on macOS:
+
+```bash
+cd review-artifact
+shasum -a 256 -c ecir2027_anonymous_artifact_v13_final.zip.sha256
+```
 
 The submission PDF is not part of this archive and must be checked separately
 after compilation for author fields, acknowledgments, PDF metadata, and page
 count.
 
-`scripts/audit_ecir_submission.py` is an author-workspace preflight: it needs
-the original manifests and payloads omitted from this lightweight archive.
+The artifact builder and `scripts/audit_ecir_submission.py` are author-workspace
+utilities: they need the original layout, manifests, and payloads omitted from
+this lightweight repository. They are not clone-only checks. The builder
+rejects enabled acknowledgements in review material.
 After a clean compilation it accepts `--aux ECIR.aux` to check that references
 start by page 13. The manuscript flushes content floats before references.
 This checks the content-page boundary, not PDF metadata or visual quality.

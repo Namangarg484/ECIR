@@ -202,6 +202,10 @@ def audit(stage: Path) -> list[str]:
             findings.append(f"{relative}: unexpected binary file")
             continue
         text = path.read_text(encoding="utf-8")
+        if path.suffix.lower() == ".tex":
+            active_tex = re.sub(r"(?<!\\)%[^\n]*", "", text)
+            if re.search(r"\\includeacknowledgementstrue\b", active_tex):
+                findings.append(f"{relative}: non-anonymous acknowledgements enabled")
         for line_number, line in enumerate(text.splitlines(), 1):
             for label, pattern in patterns:
                 if pattern.search(line):

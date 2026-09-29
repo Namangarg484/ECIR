@@ -1,0 +1,27 @@
+# Local environments, credentials, caches, and generated experiment payloads.
+.venv*/
+venv/
+.env
+.env.*
+__pycache__/
+*.py[cod]
+.DS_Store
+/artifacts/
+/cache/
+/data/
+/models/
+*.pt
+*.pth
+*.pkl
+*.npy
+*.npz
+*.jsonl
+*.jsonl.gz
+*.log
+# Local manuscript build output.
+*.aux
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.pdf

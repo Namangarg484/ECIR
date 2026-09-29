@@ -1,12 +1,34 @@
 """Non-training regression checks for submission evidence/page-limit guards."""
 
 import copy
+from pathlib import Path
+import tempfile
 import unittest
+
+from scripts.build_ecir_anonymous_artifact import audit
 
 from scripts.audit_ecir_submission import (
     AuditFailure, DATASETS, RADIUS_V9, SUPPORT, TEX, read_csv,
     references_start_page, verify_secondary_bounds, verify_support_table,
 )
+
+
+class ReviewAnonymityTests(unittest.TestCase):
+    def test_enabled_acknowledgements_rejected(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "ECIR.tex").write_text(
+                r"\includeacknowledgementstrue", encoding="utf-8")
+            self.assertTrue(any("acknowledgements enabled" in finding
+                                for finding in audit(root)))
+
+    def test_disabled_acknowledgements_and_commented_instruction_allowed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "ECIR.tex").write_text(
+                r"\includeacknowledgementsfalse" + "\n" +
+                r"% For publication: \includeacknowledgementstrue", encoding="utf-8")
+            self.assertEqual(audit(root), [])
 
 
 class PageLimitTests(unittest.TestCase):
